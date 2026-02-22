@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sethgu.github.io/sitemap.xml
