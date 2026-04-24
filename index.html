@@ -1,307 +1,126 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>顾峻铨 | Junquan Gu</title>
-  <meta name="description" content="Personal homepage of Junquan Gu (顾峻铨) — Ph.D. student at Shanghai University, focusing on AutoML and LLM-powered optimization for structured data." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junquan Gu | AutoML, Graph Learning, and Fraud Detection</title>
+  <meta name="description" content="Junquan Gu is a final-year Ph.D. student at Shanghai University working on AutoML, LLM-driven feature and model optimization, graph learning, fraud detection, and anomaly detection.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://sethgu.github.io/">
-  <meta name="description" content="Junquan Gu (顾峻铨) — Ph.D. Candidate at Shanghai University. Research: AutoML, AutoFE, LLM-driven NAS, Graph Learning, Fraud Detection, Anomaly Detection.">  
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Junquan Gu | AutoML, Graph Learning, and Fraud Detection">
+  <meta property="og:description" content="Final-year Ph.D. student at Shanghai University. Research interests include AutoML, LLM-driven optimization, graph learning, fraud detection, and anomaly detection.">
+  <meta property="og:url" content="https://sethgu.github.io/">
+  <meta property="og:image" content="https://sethgu.github.io/assets/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Junquan Gu",
-  "alternateName": "顾峻铨",
-  "url": "https://sethgu.github.io/",
-  "affiliation": { "@type": "Organization", "name": "Shanghai University" },
-  "sameAs": [
-    "https://github.com/sethGu",
-    "https://scholar.google.com/citations?user=ycbpVscAAAAJ&hl=zh-CN",
-    "https://orcid.org/0009-0004-2916-9237",
-    "https://www.linkedin.com/in/junquan-gu-339962173/"
-  ]
-}
-</script>
-  <style>
-    :root{
-      --bg:#ffffff; --fg:#111827; --muted:#6b7280; --line:#e5e7eb;
-      --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.06);
-      --accent:#2563eb; --accent2:#0ea5e9;
-      --radius:16px;
-      --maxw: 980px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; background:var(--bg); color:var(--fg);
-      font-family:var(--font); line-height:1.55;
-    }
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 18px 56px}
-    .topbar{
-      display:flex; gap:12px; align-items:center; justify-content:space-between;
-      padding:10px 12px; border:1px solid var(--line); border-radius:999px;
-      background:rgba(255,255,255,.85); backdrop-filter: blur(8px);
-      position:sticky; top:14px; z-index:10;
-    }
-    .brand{display:flex; gap:10px; align-items:center; min-width:0}
-    .dot{
-      width:10px;height:10px;border-radius:999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      flex:0 0 auto;
-    }
-    .brand-title{font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-    .lang-btns{display:flex; gap:8px; flex:0 0 auto}
-    .btn{
-      border:1px solid var(--line); background:#fff; color:var(--fg);
-      padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:600;
-    }
-    .btn.active{border-color:rgba(37,99,235,.35); box-shadow:0 0 0 3px rgba(37,99,235,.12)}
-    .hero{
-      margin-top:18px;
-      display:grid; grid-template-columns: 160px 1fr; gap:18px;
-      align-items:start;
-    }
-    .avatar{
-      width:160px; height:160px; border-radius:22px; object-fit:cover;
-      border:1px solid var(--line); box-shadow:var(--shadow);
-      background:#f3f4f6;
-    }
-    .h-title{margin:0; font-size:28px; letter-spacing:-.02em}
-    .h-sub{margin:6px 0 10px; color:var(--muted)}
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 0}
-    .chip{
-      border:1px solid var(--line); padding:6px 10px; border-radius:999px;
-      color:var(--muted); font-size:13px;
-    }
-    .grid{
-      margin-top:18px;
-      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
-    }
-    .card{
-      border:1px solid var(--line); border-radius:var(--radius);
-      background:var(--card); box-shadow:var(--shadow);
-      padding:16px 16px 14px;
-    }
-    .card h2{margin:0 0 10px; font-size:16px}
-    .card p{margin:0 0 10px}
-    .meta{color:var(--muted); font-size:14px}
-    .list{margin:10px 0 0; padding-left:18px}
-    .list li{margin:6px 0}
-    .links{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:10px
-    }
-    .linkpill{
-      border:1px solid var(--line); padding:8px 10px; border-radius:999px;
-      background:#fff;
-    }
-    footer{margin-top:18px; color:var(--muted); font-size:13px}
-    .lang{display:none}
-    .lang.show{display:block}
-
-    @media (max-width: 720px){
-      .hero{grid-template-columns: 1fr; }
-      .avatar{width:140px; height:140px}
-      .grid{grid-template-columns: 1fr}
-      .topbar{position:static}
-    }
-  </style>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Junquan Gu",
+    "alternateName": "顾峻铨",
+    "url": "https://sethgu.github.io/",
+    "image": "https://sethgu.github.io/assets/img/profile.jpg",
+    "email": "mailto:gujunquan@shu.edu.cn",
+    "jobTitle": "Ph.D. Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Shanghai University"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Shanghai University"
+    },
+    "knowsAbout": [
+      "Automated Machine Learning",
+      "Automated Feature Engineering",
+      "Large Language Models",
+      "Graph Learning",
+      "Fraud Detection",
+      "Anomaly Detection"
+    ],
+    "sameAs": [
+      "https://github.com/sethGu",
+      "https://scholar.google.com/citations?user=ycbpVscAAAAJ&hl=zh-CN",
+      "https://orcid.org/0009-0004-2916-9237",
+      "https://www.linkedin.com/in/junquan-gu-339962173/"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="dot"></div>
-        <div class="brand-title">顾峻铨 | Junquan Gu</div>
-      </div>
-      <div class="lang-btns">
-        <button class="btn" id="btn-zh" onclick="setLang('zh')">中文</button>
-        <button class="btn" id="btn-en" onclick="setLang('en')">EN</button>
-      </div>
-    </div>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Junquan Gu homepage">
+        <span class="dot"></span>
+        <span class="brand-title">Junquan Gu | 顾峻铨</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="whats-new.html">What's New</a>
+      </nav>
+    </header>
 
-    <section class="hero">
-      <img class="avatar" src="assets/img/profile.jpg" alt="Profile photo" />
-      <div>
-        <h1 class="h-title">顾峻铨 <span class="meta">| Junquan Gu</span></h1>
-
-        <div class="lang" id="zh">
-          <div class="h-sub">上海大学 计算机工程与科学学院 · 博士研究生（最后一年）</div>
+    <main>
+      <section class="hero">
+        <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Junquan Gu">
+        <div>
+          <p class="kicker">Final-year Ph.D. Student · Shanghai University</p>
+          <h1>Junquan Gu <span class="meta">顾峻铨</span></h1>
+          <p class="h-sub">I work on Automated Machine Learning, LLM-driven feature and model optimization, graph learning, fraud detection, and anomaly detection, with an emphasis on structured data and decision-oriented machine learning systems.</p>
           <div class="chips">
-            <div class="chip">AutoFE</div>
-            <div class="chip">LLM-driven NAS</div>
-            <div class="chip">AutoML</div>
-            <div class="chip">Graph Learning</div>
-            <div class="chip">Fraud Detection</div>
-            <div class="chip">Anomaly Detection</div>
+            <span class="chip">AutoML</span>
+            <span class="chip">AutoFE</span>
+            <span class="chip">LLM-driven ML Systems</span>
+            <span class="chip">Graph Learning</span>
+            <span class="chip">Fraud Detection</span>
+            <span class="chip">Anomaly Detection</span>
           </div>
-
           <div class="links">
             <a class="linkpill" href="https://github.com/sethGu" target="_blank" rel="noreferrer">GitHub</a>
             <a class="linkpill" href="https://scholar.google.com/citations?user=ycbpVscAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="linkpill" href="https://orcid.org/0009-0004-2916-9237" target="_blank" rel="noreferrer">ORCID</a>
             <a class="linkpill" href="https://www.linkedin.com/in/junquan-gu-339962173/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="linkpill" href="mailto:gujunquan@shu.edu.cn">Email</a>
           </div>
         </div>
+      </section>
 
-        <div class="lang" id="en">
-          <div class="h-sub">Final-year Ph.D. Student · School of Computer Engineering and Science, Shanghai University</div>
-          <div class="chips">
-            <div class="chip">AutoFE</div>
-            <div class="chip">LLM-driven NAS</div>
-            <div class="chip">AutoML</div>
-            <div class="chip">Graph Learning</div>
-            <div class="chip">Fraud Detection</div>
-            <div class="chip">Anomaly Detection</div>
-          </div>
+      <section class="grid" aria-label="Homepage summary">
+        <article class="card">
+          <h2>About</h2>
+          <p>I am a final-year Ph.D. student at the School of Computer Engineering and Science, Shanghai University. My research develops automated learning systems that connect task semantics, feature construction, model selection, optimization, and evaluation for structured-data problems.</p>
+          <p class="meta">Advisors: <a href="https://fisher1991.github.io/" target="_blank" rel="noreferrer">Hang Yu</a> and Xiangfeng Luo.</p>
+        </article>
 
-          <div class="links">
-            <a class="linkpill" href="https://github.com/sethGu" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="linkpill" href="https://scholar.google.com/citations?user=ycbpVscAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a class="linkpill" href="https://orcid.org/0009-0004-2916-9237" target="_blank" rel="noreferrer">ORCID</a>
-            <a class="linkpill" href="https://www.linkedin.com/in/junquan-gu-339962173/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h2><span class="lang" id="zh-about-title">简介</span><span class="lang" id="en-about-title">About</span></h2>
-
-        <div class="lang" id="zh-about">
-          <p>我目前为上海大学计算机工程与科学学院最后一年博士生，研究方向聚焦自动机器学习（AutoML）、大语言模型驱动的特征与建模优化、结构化数据学习与评估，以及面向实际场景的可扩展机器学习系统。团队中目前带领 5 位硕士研究生开展 AutoML 方向研究，围绕特征生成与筛选、模型选择与集成、训练稳定性与泛化评估等问题持续推进研究与工程落地。</p>
-          <p class="meta">导师：<a href="https://fisher1991.github.io/" target="_blank" rel="noreferrer">余航</a>与骆祥峰</p>
-        </div>
-
-        <div class="lang" id="en-about">
-          <p>I am a final-year Ph.D. student at Shanghai University. My research focuses on Automated Machine Learning (AutoML), LLM-powered feature and model optimization for structured data, generalization-oriented evaluation, and scalable ML systems for real-world deployment. I currently supervise and coordinate a research effort with five M.S. students on AutoML.</p>
-          <p class="meta">Advisors:  <a href="https://fisher1991.github.io/" target="_blank" rel="noreferrer">Hang Yu</a> and Xiangfeng Luo</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="lang" id="zh-service-title">学术服务与论文状态</span><span class="lang" id="en-service-title">Service & Publication Status</span></h2>
-
-        <div class="lang" id="zh-service">
-          <p>担任 SIGIR、ICASSP、CAIS 等会议/期刊审稿人。</p>
-          <p>除 Google Scholar 页面公开索引的论文之外，目前另有 <b>6</b> 篇第一作者论文与 <b>5</b> 篇非第一作者论文处于投稿评审阶段。已公开论文的完整列表与引用统计请见 Google Scholar。</p>
-        </div>
-
-        <div class="lang" id="en-service">
-          <p>Reviewer for SIGIR, ICASSP, CAIS, and related venues.</p>
-          <p>In addition to the publications publicly indexed on my Google Scholar profile, I currently have <b>6</b> first-author manuscripts and <b>5</b> co-author manuscripts under review; for the complete list of publicly available papers and citation statistics, please refer to Google Scholar.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="lang" id="zh-proj-title">科研项目经历</span><span class="lang" id="en-proj-title">Research Projects</span></h2>
-
-        <div class="lang" id="zh-proj">
+        <article class="card">
+          <h2>Research Focus</h2>
           <ul class="list">
-            <li>国家重点研发计划（2021YFC3300602）：博士期间参与，并以博士生身份承担实际推进与执行责任（主研）。</li>
-            <li>国家自然科学基金相关项目：博士期间参与，承担实际研究任务推进与组织协调（主研）。</li>
+            <li>LLM-assisted automated feature engineering and model design for tabular data.</li>
+            <li>Graph-based anomaly and fraud detection under incomplete, imbalanced, and cross-domain settings.</li>
+            <li>Reliable AutoML pipelines with validation-driven refinement, adaptive ensembling, and calibrated outputs.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="lang" id="en-proj">
-          <ul class="list">
-            <li>National Key R&amp;D Program (No. 2021YFC3300602): Contributor during my Ph.D.; served as the doctoral day-to-day execution lead (not the project PI).</li>
-            <li>NSFC-related research project: Contributor during my Ph.D.; responsible for major research task execution and coordination (not the project PI).</li>
-          </ul>
-        </div>
-      </div>
+        <article class="card">
+          <h2>Selected Academic Profile</h2>
+          <p>My first-author work spans graph anomaly detection, LLM-driven AutoML, automated feature engineering, and open-source fraud-data simulation. Several manuscripts are currently under review or revision.</p>
+          <p><a href="publications.html">View publications →</a></p>
+        </article>
 
-      <div class="card">
-        <h2><span class="lang" id="zh-award-title">获奖与竞赛（队长/副队长）</span><span class="lang" id="en-award-title">Awards (team captain/vice-captain)</span></h2>
+        <article class="card">
+          <h2>Service & Projects</h2>
+          <p>Reviewer for SIGIR, ICASSP, CAIS, and related venues. During my Ph.D., I have contributed to national-level research projects and coordinated student research on AutoML and fraud detection.</p>
+          <p><a href="cv.html">View CV →</a></p>
+        </article>
+      </section>
+    </main>
 
-        <div class="lang" id="zh-award">
-          <ul class="list">
-            <li>上海大学“挑战杯”优秀项目</li>
-            <li>上海大学“互联网+”金奖</li>
-            <li>2022 “中国创翼”创业创新大赛崇明赛区优胜奖</li>
-            <li>“兆易创新杯”第十七届中国研究生电子设计竞赛 省级一等奖</li>
-          </ul>
-        </div>
-
-        <div class="lang" id="en-award">
-          <ul class="list">
-            <li>Shanghai University “Challenge Cup” Excellent Project (team captain/vice-captain)</li>
-            <li>Shanghai University “Internet+” Gold Award</li>
-            <li>2022 “China Chuangyi” Entrepreneurship &amp; Innovation Competition (Chongming Division) Merit Award</li>
-            <li>Provincial First Prize, 17th “GigaDevice Cup” China Graduate Electronics Design Contest</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="lang" id="zh-contact-title">联系</span><span class="lang" id="en-contact-title">Contact</span></h2>
-
-        <div class="lang" id="zh-contact">
-          <p>如需合作、学术交流或学生指导相关沟通，欢迎通过以下方式联系。</p>
-          <p class="meta">Email：<span style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">gujunquan@shu.edu.cn</span></p>
-        </div>
-
-        <div class="lang" id="en-contact">
-          <p>For collaboration, academic discussions, or mentoring-related inquiries, feel free to reach out.</p>
-          <p class="meta">Email: <span style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">gujunquan@shu.edu.cn</span></p>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="lang" id="zh-more-title">更多信息</span><span class="lang" id="en-more-title">More</span></h2>
-
-        <div class="lang" id="zh-more">
-          <p>完整论文列表与引用统计请见 Google Scholar；身份信息与学术履历也可在 ORCID 与 LinkedIn 页面核验与同步。</p>
-        </div>
-
-        <div class="lang" id="en-more">
-          <p>Please refer to Google Scholar for publications and citations. ORCID and LinkedIn provide additional profile verification and updates.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <span class="lang" id="zh-foot">© <span id="year"></span> 顾峻铨 · 托管于 GitHub Pages</span>
-      <span class="lang" id="en-foot">© <span id="year2"></span> Junquan Gu · Hosted on GitHub Pages</span>
-    </footer>
+    <footer>© <span id="year"></span> Junquan Gu. Hosted on GitHub Pages.</footer>
   </div>
-
-  <script>
-    function setLang(lang){
-      const zhBlocks = document.querySelectorAll('#zh, #zh-about-title, #zh-about, #zh-service-title, #zh-service, #zh-proj-title, #zh-proj, #zh-award-title, #zh-award, #zh-contact-title, #zh-contact, #zh-more-title, #zh-more, #zh-foot');
-      const enBlocks = document.querySelectorAll('#en, #en-about-title, #en-about, #en-service-title, #en-service, #en-proj-title, #en-proj, #en-award-title, #en-award, #en-contact-title, #en-contact, #en-more-title, #en-more, #en-foot');
-
-      zhBlocks.forEach(el => el.classList.remove('show'));
-      enBlocks.forEach(el => el.classList.remove('show'));
-
-      if(lang === 'zh'){
-        zhBlocks.forEach(el => el.classList.add('show'));
-        document.getElementById('btn-zh').classList.add('active');
-        document.getElementById('btn-en').classList.remove('active');
-        document.documentElement.lang = 'zh-CN';
-      }else{
-        enBlocks.forEach(el => el.classList.add('show'));
-        document.getElementById('btn-en').classList.add('active');
-        document.getElementById('btn-zh').classList.remove('active');
-        document.documentElement.lang = 'en';
-      }
-      localStorage.setItem('site_lang', lang);
-    }
-
-    (function init(){
-      const y = new Date().getFullYear();
-      const y1 = document.getElementById('year');
-      const y2 = document.getElementById('year2');
-      if(y1) y1.textContent = y;
-      if(y2) y2.textContent = y;
-
-      const saved = localStorage.getItem('site_lang');
-      const preferred = saved || (navigator.language && navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en');
-      setLang(preferred);
-    })();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
